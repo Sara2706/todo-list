@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper{
+    padding: 3px;
+    width: 370px;
+    position: relative;
+}
+
+.wrapper h1{
+    margin: 10px 0;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.top{
+    padding: 15px;
+    background-color: rgb(26, 26, 190);
+    border-radius: 10px;
+    color: white;
+}
+
+.input-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-item input{
+    border: 1px solid rgb(136, 136, 136);
+    outline: none;
+    padding: 5px;
+    width: 75%;
+    border-radius: 3px;
+}
+
+.input-item button{
+    padding: 5px 15px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.todos{
+    margin-top: 15px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.content{
+    margin: 10px 0;
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.input-content input{
+    border: none;
+    outline: none;
+    background: none;
+    appearance: none;
+    color: rgb(92, 92, 92);
+}
+
+.input-content input:not(:read-only){
+    color: #000;
+}
+
+.input-button button{
+    border: none;
+    outline: none;
+    background: none;
+    appearance: none;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.input-button .suc{
+    color: green;
+}
+
+.input-button .edit{
+    color:darkblue;
+}
+
+.input-button .close{
+    color: red;
+}
+
+.disable{
+    display: none;
+}
